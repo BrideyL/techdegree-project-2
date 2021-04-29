@@ -1,0 +1,149 @@
+/* ==========================
+    Base Styles / Media Queries
+===========================*/
+body {
+    margin: 0;
+    padding: 1.5rem 0 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+    color: #4a4a69;
+}
+header {
+    padding: 0rem 1rem 0 1rem;
+}
+
+img {
+   max-width: 70%;
+   margin: auto;
+}
+
+.container, footer, header {
+   text-align: center; 
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 6px;
+	padding: 12px 0 12px 0;
+	background: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#portfolio {
+	padding: .5rem 1rem 2rem 1rem;
+	background: #fff;	
+}
+a {
+    color: #4a4a69;
+    text-decoration: none;
+}
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+h3 {
+	font-weight: normal;
+	text-align: center;
+}
+#contact {
+	padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+}
+#contact ul {
+	padding-left: none;
+	list-style: none;
+}
+#contact li {
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+#contact li span {
+	padding-right: 12px;
+	font-weight: normal;
+    text-transform: lowercase;
+}
+footer {
+    padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #e7e7e7;
+    font-size: .9rem;
+	font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+/* Tablet View */
+@media (min-width: 768px) {
+
+    header {
+        padding: 0 2rem 0 2rem;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        flex-basis: 20%;
+        background: transparent;
+    }
+    .header {
+        display: flex;
+		padding: 2rem 0 4rem 0;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		text-align: left;
+		font-size: 1.25rem;
+    }
+    .header p {
+        padding-right: 1rem;
+    }
+    .header-image {
+        width: 100;
+        padding-left: 1rem;
+    }
+    #portfolio {
+        display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+    }
+    #portfolio h2 {
+        flex-basis: 100;
+    }
+    #portfolio item {
+        flex-basis: 48%;
+		padding-bottom: 2.5rem;
+		padding-right: .5rem;
+    }
+    #contact {
+		width: 65%;
+		margin: 0 auto;
+		padding-bottom: 2rem;
+	}
+    #contact ul {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
