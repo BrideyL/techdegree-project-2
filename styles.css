@@ -9,11 +9,12 @@ body {
     color: #4a4a69;
 }
 header {
+    
     padding: 0rem 1rem 0 1rem;
 }
 
 img {
-   max-width: 70%;
+   max-width: 100%;
    margin: auto;
 }
 
@@ -24,7 +25,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
-li {
+.nav li {
     margin-bottom: 6px;
 	padding: 12px 0 12px 0;
 	background: #fff;
@@ -69,7 +70,7 @@ h3 {
 #contact li span {
 	padding-right: 12px;
 	font-weight: normal;
-    text-transform: lowercase;
+    
 }
 footer {
     padding: 1rem;
@@ -81,69 +82,105 @@ footer {
     text-decoration: none;
     margin-bottom: 0;
 }
+footer .nav {
+    display: none;
+}
 /* Tablet View */
 @media (min-width: 768px) {
 
-    header {
-        padding: 0 2rem 0 2rem;
-    }
-    ul {
-        display: flex;
-        justify-content: center;
-    }
-    li {
-        flex-basis: 20%;
-        background: transparent;
-    }
-    .header {
-        display: flex;
-		padding: 2rem 0 4rem 0;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		text-align: left;
-		font-size: 1.25rem;
-    }
-    .header p {
-        padding-right: 1rem;
-    }
-    .header-image {
-        width: 100;
-        padding-left: 1rem;
-    }
-    #portfolio {
-        display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-    }
-    #portfolio h2 {
-        flex-basis: 100;
-    }
-    #portfolio item {
-        flex-basis: 48%;
-		padding-bottom: 2.5rem;
-		padding-right: .5rem;
-    }
-    #contact {
-		width: 65%;
-		margin: 0 auto;
-		padding-bottom: 2rem;
-	}
-    #contact ul {
-        text-align: center;
-    }
+header {
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+}
+.bio {
+    display:flex;
+    flex-direction: row-reverse;
+}
+.bio div {
+    flex-basis: 40%;
+        
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+}
+li {
+    flex-basis: 20%;
+    background: transparent;
+}
+.header p {
+    padding-right: 1rem;
+}
+.header-image {
+    width: 100%;
+    padding-left: 1rem;
+}
+#portfolio {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#portfolio h2 {
+    flex-basis: 100%;
+}
+#portfolio .item {
+    flex-basis: 48%;
+	padding-bottom: 2.5rem;
+	padding-right: .5rem;
+}
+#contact {
+	width: 65%;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+#contact ul {
+    text-align: center;
+}
 
 
+footer .nav {
+    display: block;
+}
+footer li {
+    display: inline-block;
+    margin-left: 5px;
+}
+footer .back-to-top {
+    display: none;
+}
 
 
+@media (min-width: 1024px) {
 
+header {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+header h1, .nav {
+    flex-basis: 50%;
+}
+h1 {
+    text-align: left;
+}
+.nav ul {
+    justify-content: flex-end;
+}
+.nav li {
+    display: inline-block;
+    margin-left: 1rem;
+    text-align: right;
+}
+.bio {
+    flex-basis: 100%;
+}
+#portfolio .item {
+    flex-basis: 30%;
+	padding-right: .5rem;
+	padding-left: .5rem; 
+}
+    
 
-
-
-
-
-
-
-
-
+}
 }
 
