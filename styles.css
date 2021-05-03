@@ -62,7 +62,7 @@ h3 {
     text-align: center;
 }
 #contact ul {
-	padding-left: none;
+	padding-left: 0;
 	list-style: none;
 }
 #contact li {
