@@ -99,15 +99,21 @@ header {
     flex-direction: row-reverse;
 }
 .bio div {
-    flex-basis: 40%;
+    flex-basis: 100%;
         
 }
-.nav ul {
+.bio p{
+  flex-basis: 100%;
+
+}
+.nav {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .nav li {
     background-color: transparent;
+    display: inline-block;
 }
 li {
     flex-basis: 20%;
